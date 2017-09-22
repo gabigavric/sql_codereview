@@ -8,30 +8,31 @@ class Project
     @title = attributes[:title]
   end
 
+  def ==(another_project)
+    (self.title.==(another_project.title)).&(self.id.==(another_project.id))
+  end
+
+
   def self.all
     returned_projects = DB.exec("SELECT * FROM projects;")
     projects = []
     returned_projects.each do |project|
-      id = project.fetch("id").to_i
       title = project.fetch("title")
-    projects.push(Project.new({:id => id, :title => title}))
-  end
+      id = project.fetch("id").to_i
+    projects.push(Project.new({:title => title, :id => id}))
+    end
   projects
   end
 
-  def ==(another_project)
-      (self.title.==(another_project.title)).&(self.id.==(another_project.id))
-  end
-
   def save
-      project = DB.exec("INSERT INTO projects (title) VALUES ('#{@title}') RETURNING id;")
-      @id = project.first.fetch("id").to_i
+    project = DB.exec("INSERT INTO projects (title) VALUES ('#{@title}') RETURNING id;")
+    @id = project.first.fetch("id").to_i
   end
 
   def self.find(id)
-      project = DB.exec("SELECT * FROM projects WHERE id = #{id};")
-      title = project.first.fetch("title")
-      Project.new({:title => title, :id => id})
+    project = DB.exec("SELECT * FROM projects WHERE id = #{id};")
+    title = project.first.fetch("title")
+    Project.new({:title => title, :id => id})
   end
 
   def update(attributes)
@@ -44,14 +45,14 @@ class Project
   end
 
   def volunteers
-      volunteers = []
-      results = DB.exec("SELECT * FROM volunteers WHERE project_id = #{self.id};")
-      results.each() do |result|
-        name = result.fetch("name")
-        project_id = result.fetch("project_id").to_i
-        id = result.fetch("id").to_i
-        volunteers.push(Volunteer.new({:name => name, :project_id => project_id, :id => id}))
-      end
-      volunteers
+    volunteers = []
+    results = DB.exec("SELECT * FROM volunteers WHERE project_id = #{self.id};")
+    results.each() do |result|
+      name = result.fetch("name")
+      id = result.fetch("id").to_i
+      project_id = result.fetch("project_id").to_i
+      volunteers.push(Volunteer.new({:name => name, :id => id, :project_id => project_id}))
+    end
+    volunteers
   end
 end
