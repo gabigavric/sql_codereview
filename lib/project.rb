@@ -12,14 +12,15 @@ class Project
     (self.title.==(another_project.title)).&(self.id.==(another_project.id))
   end
 
-
   def self.all
     returned_projects = DB.exec("SELECT * FROM projects;")
     projects = []
     returned_projects.each do |project|
       title = project.fetch("title")
       id = project.fetch("id").to_i
-    projects.push(Project.new({:title => title, :id => id}))
+      if(title!="Unassigned")
+        projects.push(Project.new({:title => title, :id => id}))
+      end
     end
   projects
   end
@@ -41,7 +42,7 @@ class Project
   end
 
   def delete
-    DB.exec("DELETE FROM projects WHERE id = #{self.id};")
+    DB.exec("DELETE FROM projects WHERE id in ( #{self.id})")
   end
 
   def volunteers
@@ -56,3 +57,4 @@ class Project
     volunteers
   end
 end
+
