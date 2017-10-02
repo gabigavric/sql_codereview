@@ -28,14 +28,14 @@ describe Volunteer do
       expect(Volunteer.all).to eq []
     end
 
-  #   it 'returns all volunteers' do
-  #     volunteer1 = Volunteer.new({:name => 'Jane', :project_id => 1})
-  #     volunteer1.save
-  #     volunteer2 = Volunteer.new({:name => 'Joe', :project_id => 1})
-  #     volunteer2.save
-  #     expect(Volunteer.all).to eq [volunteer1, volunteer2]
-  #   end
-  # end
+    it 'returns all volunteers' do
+      volunteer1 = Volunteer.new({:name => 'Jane', :project_id => 1})
+      volunteer1.save
+      volunteer2 = Volunteer.new({:name => 'Joe', :project_id => 1})
+      volunteer2.save
+      expect(Volunteer.all).to eq [volunteer1, volunteer2]
+    end
+  end
 
   # describe '#save' do
   #   it 'adds a volunteer to the database' do
@@ -54,8 +54,10 @@ describe Volunteer do
       expect(Volunteer.find(volunteer1.id)).to eq volunteer1
     end
   end
+end
 
-  # describe '#update' do
+
+# describe '#update' do
   #   it 'allows a user to update a volunteer name' do
   #     volunteer = Volunteer.new({:name=> 'Makr', :project_id => 1})
   #     volunteer.save
@@ -72,4 +74,3 @@ describe Volunteer do
   #     expect(Volunteer.all).to eq []
   #   end
   # end
-end
