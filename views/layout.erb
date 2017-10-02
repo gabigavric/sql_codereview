@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles.css">
-  <title>Volunteer Tracker</title>
+  <title>A Company</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link href="<%= url('css/styles.css') %>" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-success">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a class="navbar-brand" href="\">home</a>
-      </div>
-    </div>
-  </div>
-</nav>
-<div id="main" class="container">
+<div class="container">
   <%= yield %>
 </div>
 </body>
-
 </html>
