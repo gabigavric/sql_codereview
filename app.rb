@@ -10,3 +10,7 @@ require 'pg'
 DB = PG.connect({dbname: 'volunteer_tracker'})
 Project.new({:title => "Unassigned"}).save
 
+
+get('/')do
+  redirect index
+end
