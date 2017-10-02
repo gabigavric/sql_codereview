@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b90545e7-3514-40af-9bd1-c787d900cae3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/volunteer.rb" afterPath="$PROJECT_DIR$/lib/volunteer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/volunteer_spec.rb" afterPath="$PROJECT_DIR$/spec/volunteer_spec.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,25 +24,35 @@
     <SUITE FILE_PATH="coverage/volunteer_tracker@spec_helper.coverage" NAME="spec_helper Coverage Results" MODIFIED="1506903688533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="volunteer-tracker" />
     <SUITE FILE_PATH="coverage/volunteer_tracker@Run_spec__volunteer_integration_spec___volunteer_tracker.coverage" NAME="Run spec 'volunteer_integration_spec': volunteer-tracker Coverage Results" MODIFIED="1506903709518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="volunteer-tracker" />
     <SUITE FILE_PATH="coverage/volunteer_tracker@Run_spec__project_spec___volunteer_tracker.coverage" NAME="Run spec 'project_spec': volunteer-tracker Coverage Results" MODIFIED="1506903615083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="volunteer-tracker" />
-    <SUITE FILE_PATH="coverage/volunteer_tracker@Run_spec__volunteer_spec___volunteer_tracker.coverage" NAME="Run spec 'volunteer_spec': volunteer-tracker Coverage Results" MODIFIED="1506903754961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="volunteer-tracker" />
+    <SUITE FILE_PATH="coverage/volunteer_tracker@Run_spec__volunteer_spec___volunteer_tracker.coverage" NAME="Run spec 'volunteer_spec': volunteer-tracker Coverage Results" MODIFIED="1506905102309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="volunteer-tracker" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="volunteer_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="volunteer_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/volunteer_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="39" column="2" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="volunteer.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="volunteer.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/volunteer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="360">
+              <caret line="40" column="72" lean-forward="false" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/project.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="41" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -66,8 +77,8 @@
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/lib/project.rb" />
         <option value="$PROJECT_DIR$/spec/volunteer_integration_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/volunteer.rb" />
         <option value="$PROJECT_DIR$/spec/volunteer_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/volunteer.rb" />
       </list>
     </option>
   </component>
@@ -324,12 +335,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_tests_in_spec__volunteer-tracker - 2017.10.01 at 17h 13m 43s.xml">
-      <configuration name="All tests in spec: volunteer-tracker" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_tests_in_spec__volunteer-tracker - 2017.10.01 at 17h 14m 04s.xml">
-      <configuration name="All tests in spec: volunteer-tracker" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="All_tests_in_spec__volunteer-tracker - 2017.10.01 at 17h 14m 11s.xml">
       <configuration name="All tests in spec: volunteer-tracker" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
@@ -354,9 +359,15 @@
     <history-entry file="Run_spec_'volunteer_spec'__volunteer-tracker - 2017.10.01 at 17h 22m 36s.xml">
       <configuration name="Run spec 'volunteer_spec': volunteer-tracker" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Run_spec_'volunteer_spec'__volunteer-tracker - 2017.10.01 at 17h 43m 53s.xml">
+      <configuration name="Run spec 'volunteer_spec': volunteer-tracker" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'volunteer_spec'__volunteer-tracker - 2017.10.01 at 17h 45m 02s.xml">
+      <configuration name="Run spec 'volunteer_spec': volunteer-tracker" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11821000" />
+    <option name="totallyTimeSpent" value="12681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,14 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/project.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="29" column="40" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="29" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -521,18 +524,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/volunteer.rb">
+    <entry file="file://$PROJECT_DIR$/lib/project.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="279">
+          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="41" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/volunteer_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="39" column="2" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="225">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/volunteer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="40" column="72" lean-forward="false" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
           <folding />
         </state>
       </provider>
