@@ -11,6 +11,15 @@ DB = PG.connect({dbname: 'volunteer_tracker'})
 Project.new({:title => "Unassigned"}).save
 
 
-get('/')do
-  redirect index
+get('/') do
+  @projects = Project.all()
+  erb(:index)
+end
+
+post('/projects') do
+  title = params["title"]
+  new_project = Project.new({:id=> nil, :title=> title})
+  new_project.save()
+  @projects = Project.all()
+  erb(:index)
 end
