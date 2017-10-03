@@ -28,3 +28,8 @@ get('/projects/:id') do
   @project = Project.find(params[:id].to_i())
   erb(:project_info)
 end
+
+get('/projects/:id/edit') do
+  @project = Project.find(params[:id].to_i())
+  erb(:edit)
+end
