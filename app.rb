@@ -23,3 +23,8 @@ post('/projects') do
   @projects = Project.all()
   erb(:index)
 end
+
+get('/projects/:id') do
+  @project = Project.find(params[:id].to_i())
+  erb(:project_info)
+end
