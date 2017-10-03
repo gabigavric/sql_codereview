@@ -2,7 +2,6 @@
 
 
   <h3><%= @project.title() %></h3>
-  <!--<h3>Project code: <%= @project.id() %></h3>-->
   <% if @project.volunteers.any? %>
 
       <h3>Volunteers:</h3>
@@ -30,12 +29,9 @@
   <div class="form-group">
     <label for="name">Add a volunteer: </label>
     <input name="name" id="name"  class="form-control" type="text">
-    <button type="submit" class="btn btn-info">Add</button>
+    <button type="submit">Add</button>
   </div>
 </form>
-
-
-
 <br>
 <div class="container">
   <a href="/"><button class="btn">Return Home</a>
