@@ -30,8 +30,8 @@
       <file leaf-file-name="app.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+            <state relative-caret-position="194">
+              <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -355,7 +355,7 @@
       <workItem from="1506890528636" duration="1051000" />
       <workItem from="1506892030162" duration="1762000" />
       <workItem from="1506915037314" duration="153000" />
-      <workItem from="1506989889173" duration="6532000" />
+      <workItem from="1506989889173" duration="6721000" />
     </task>
     <task id="LOCAL-00001" summary="error found in volunteer method, no lib code added since last time">
       <created>1506901916197</created>
@@ -407,7 +407,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22731000" />
+    <option name="totallyTimeSpent" value="22920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -633,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+        <state relative-caret-position="194">
+          <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding />
         </state>
       </provider>
