@@ -49,3 +49,8 @@ post('/projects/:id/volunteers') do
   volunteer.save
   redirect("/projects/#{@project.id}/edit")
 end
+
+get('/projects/:id/delete') do
+  @project = Project.find(params[:id].to_i)
+  erb(:edit)
+end
