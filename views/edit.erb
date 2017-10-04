@@ -1,7 +1,4 @@
-<h3> Edit Project Information: </h3>
-
-
-  <h3><%= @project.title() %></h3>
+<h1><%= @project.title() %></h1>
   <% if @project.volunteers.any? %>
 
       <h3>Volunteers:</h3>
@@ -34,5 +31,5 @@
 </form>
 <br>
 <div class="container">
-  <a href="/"><button class="btn">Return Home</a>
+  <a href="/"><button class="btn">Return Home</button></a>
 </div>
