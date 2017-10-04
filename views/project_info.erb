@@ -1,5 +1,15 @@
-<h3> About the Project </h3>
+<h3> Project Information </h3>
 
   <h3><%= @project.title() %></h3>
+
+<% if @project.volunteers.any? %>
+
+    <h3>Volunteers:</h3>
+    <ul>
+      <% @project.volunteers.each do |volunteer| %>
+          <li><%= volunteer.name %></li>
+      <% end %>
+    </ul>
+<% end %>
 
 <a href="/projects/<%= @project.id %>/edit">Edit Project</a>

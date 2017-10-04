@@ -63,3 +63,10 @@ delete('/projects/:id/delete') do
   Project.all()
   redirect('/')
 end
+
+get('/projects/:id/editvolunteer/:user_id') do
+  user_id = params[:user_id].to_i
+  @volunteer = Volunteer.find(user_id)
+  erb(:edit_volunteer)
+end
+
