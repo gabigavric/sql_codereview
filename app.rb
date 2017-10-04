@@ -70,3 +70,13 @@ get('/projects/:id/editvolunteer/:user_id') do
   erb(:edit_volunteer)
 end
 
+
+post('/projects/:id/editvolunteer/:user_id') do
+  user_id = params[:user_id].to_i
+  name = params["name"]
+  @volunteer = Volunteer.find(params["user_id"].to_i)
+  @volunteer.update({:name => name})
+  redirect("/projects/#{@volunteer.project_id}/edit")
+end
+
+
