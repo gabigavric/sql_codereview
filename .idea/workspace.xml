@@ -423,7 +423,7 @@
       <workItem from="1506892030162" duration="1762000" />
       <workItem from="1506915037314" duration="153000" />
       <workItem from="1506989889173" duration="16946000" />
-      <workItem from="1507157881282" duration="356000" />
+      <workItem from="1507157881282" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="error found in volunteer method, no lib code added since last time">
       <created>1506901916197</created>
@@ -475,7 +475,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33501000" />
+    <option name="totallyTimeSpent" value="33679000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
